@@ -2,6 +2,7 @@ import { program } from 'commander';
 import { modelsCommand } from './commands/models';
 import { agentCommand } from './commands/agent';
 import { providerCommand } from './commands/providers';
+import { listCommand } from './commands/providers/list';
 
 program
   .name('opencode')
@@ -9,6 +10,7 @@ program
   .version('0.1.0')
   .addCommand(modelsCommand)
   .addCommand(agentCommand)
-  .addCommand(providerCommand);
+  .addCommand(providerCommand)
+  .addCommand(listCommand)
 
 program.parse();

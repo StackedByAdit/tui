@@ -1,6 +1,4 @@
 import { Command } from 'commander';
-import { homedir } from 'os';
-import path from "path";
 import fs from "fs";
 
 interface option {
@@ -28,5 +26,5 @@ export const loginCommand = new Command("login")
         };
 
         fs.writeFileSync(configPath, JSON.stringify(config, null, 2));
-        console.log(`✅ Logged in as ${options.provider}`);
+        console.log(`Logged in as ${options.provider}`);
     })

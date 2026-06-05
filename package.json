@@ -1,6 +1,16 @@
 {
   "dependencies": {
     "@types/commander": "^2.12.5",
-    "chalk": "^5.6.2"
+    "@types/node": "^25.9.1",
+    "chalk": "^5.6.2",
+    "node": "^26.3.0"
+  },
+  "name": "tui-starter",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
   }
 }
